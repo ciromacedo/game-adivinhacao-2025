@@ -81,8 +81,12 @@
 
       function verificarPalpite(){
          var caixa_texto = document.getElementById('NMPalpite');
-        // alert( caixa_texto.value );
-        alert(numeroSecreto);
+         var chuteDoJogador = parseInt(caixa_texto.value);
+         
+         if(chuteDoJogador == numeroSecreto){
+           alert("Você acertou!");
+         }
+          alert(numeroSecreto);
       }
 
     </script>
