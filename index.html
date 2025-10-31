@@ -108,11 +108,16 @@
             return;
          }
          
+         qtdTentativas = qtdTentativas - 1;
          
          if(chuteDoJogador == numeroSecreto){
             div_mensagem.textContent = "Você acertou!";
          }else{
             div_mensagem.textContent = "Você errou!";
+         }
+
+         if(qtdTentativas == 0){
+          div_mensagem.textContent = "Fim de jogo! O número secreto era "+numeroSecreto;
          }
           
       }
